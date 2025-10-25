@@ -1,5 +1,5 @@
 ## Risc-V project topics
-1. Histogram stretching + histogram equalization. Two resulting images in separate files. Histograms comparison.
+1. Histogram stretching + histogram equalization. Two resulting images in separate files. Histograms comparison (afterwards).
 2. Image size extension using bilinear interpolation. 
 3. Binary image mirror reflection (input image in BMP format with 1 bit/pixel, performance optimization).
 4. Image filtering with Robert's filter ([Roberts cross](https://en.wikipedia.org/wiki/Roberts_cross)).
@@ -7,13 +7,13 @@
 6. Image filtering with median filter (mask of size 5x5, performance optimization).
 7. Threshold with Otsu method. RGB image converted to grayscale.
 8. [Mean Adaptive Threshold](https://homepages.inf.ed.ac.uk/rbf/HIPR2/adpthrsh.htm). Input image in grayscale.
-9. Floyda-Steinberga color reduction algorithm. Input image WITHOUT color palette.
+9. Floyd-Steinberg color reduction algorithm. Input image WITHOUT color palette.
 10. Line drawing with Xiaolin Wu algorithm.
 11. Newton's fractal f(z) = z^3 - 1 (+translation, drawing on a BMP file of arbitrary size, displayed complex plane area proportional to image size).
 12. Newton's fractal f(z) = z^5 - 1 (+zoom, image midpoint in z=0, drawing on a BMP file of arbitrary size, displayed complex plane area proportional to image size).
 13. Three point Bezier curve.
 14. Triangle shading (coordinates & colors read from console). 
-15. Calucliating sine & cosine values using CORDIC algorithm (no images involved). 
+15. Calculating sine & cosine values using CORDIC algorithm (no images involved). 
 16. Orthogonal projection of two triangles (z-buffer, coordinates read from console). 
 
 [Assignment table](https://wutwaw-my.sharepoint.com/:x:/g/personal/slawomir_niespodziany_pw_edu_pl/ERwLc89tU91BrhZMLEFLZn4B0fcK_YF8B_xaa77L4twK6A?e=HZKwos)
