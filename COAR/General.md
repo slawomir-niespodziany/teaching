@@ -1,12 +1,12 @@
 # COAR - General
 
 ## Grading
-Total | (/20pkt)
+Total | (/20p)
 -|-
-Risc-V test (in class, hands-on programming) | 3pkt
-Risc-V project (homework) | 6pkt
-Intel-x86 test (in class, hands-on programming) | 3pkt
-Intel-x86 project (homework) | 6 + 2pkt (32b + 64b vesions)
+Risc-V test (in class, hands-on programming) | 3p
+Risc-V project (homework) | 6p
+Intel-x86 test (in class, hands-on programming) | 3
+Intel-x86 project (homework) | 6 + 2p (32b + 64b vesions)
 
 Lecture tests 1 & 2 are carried out during laboratory classes, but are graded as part of the lecture.
 
