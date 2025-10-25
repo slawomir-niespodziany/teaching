@@ -1,21 +1,25 @@
 # ARKO - Informacje organizacyjne
 
-## Harmonogram ćwiczeń laboratoryjnych (kolejność chronologiczna)
-1. Wprowadzenie do architektury Risc-V ([RiscvUppercase.asm](RiscvUppercase.asm), +rozdanie tematów projektów)
-2. Sprawdzian z architektury Risc-V
-3. Wprowadzenie do architektury Intel x86 (+konsultacje projektów Risc-V)
+## Punktacja
+Total | (/20pkt)
+-|-
+Sprawdzian Risc-V (implementacja w laboratorium) | 3pkt
+Projekt Risc-V (realizowany w domu) | 6pkt
+Sprawdzian Intel-x86 (implementacja w laboratorium) | 3pkt
+Projekt Intel-x86 (realizowany w domu) | 6 + 2pkt (wersja 32b + 64b)
+
+Kolokwia wykładowe odbywają się w czasie zajęć laboratoryjnych, ale nie są oceniane w ramach nich.
+
+<!-- ## Harmonogram ćwiczeń laboratoryjnych
+1. Wprowadzenie do architektury Risc-V ([RiscvUppercase.asm](../resources/RiscVUppercase.asm) + rozdanie tematów projektów,
+2. Sprawdzian z architektury Risc-V (implementacja w laboratorium, druga godzina) + teoria Risc-V (pierwsza godzina)
+3. Wprowadzenie do architektury Intel x86,
 4. Oddanie projektów Risc-V
 5. Sprawdzian z architektury Intel x86
 6. Konsultacje projektów Intel x86
 7. Oddanie projektów Intel x86
 
-## Punktacja
-Total | (/20pkt)
--|-
-Sprawdzian Risc-V | 3pkt
-Projekt Risc-V | 6pkt
-Sprawdzian Intel-x86 | 3pkt
-Projekt Intel-x86 | 6+2pkt
+Projekty można konsultować w czasie wszystkich zajęć laboratoryjnych.
 
 ## Sprawdziany - Risc-V, Intel x86
 Zadania na sprawdzianach polegają na implementacji programów przetwarzających łańcuchy znakowe wprowadzane przez użytkownika (podobnie jak przykłady przedstawione na zajęciach wprowadzających z obu architektur). Poziom skomplikowania może być większy - może być konieczna implementacja np.zagnieżdżonej pętli (pętla w pętli - jeden poziom zagnieżdżenia, nie więcej). Przykładowe zadanie do przećwiczenia w domu:
@@ -92,4 +96,4 @@ Część Assembly:
 - Pojedyncze wywołanie funkcji asemblerowej powinno realizować kompletny wynik działania algorytmu (np. renderować cały obraz, a nie pojedyncze piksele/wiersze), 
 - Kod asemblerowy powinien używać liczb zmiennoprzecinkowych (float lub double),
 - Można (nie trzeba) korzystać z jednostek wektorowych,
-- Implementacja wersji 64b jest oceniana w skali do 8p (implementacja wersji 32b nie jest konieczna),
+- Implementacja wersji 64b jest oceniana w skali do 8p (implementacja wersji 32b nie jest konieczna), -->
