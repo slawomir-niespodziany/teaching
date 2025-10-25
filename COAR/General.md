@@ -14,9 +14,9 @@ Lecture tests 1 & 2 are carried out during laboratory classes, but are graded as
 1. Risc-V introduction ([RiscVUppercase.asm](../resources/RiscVUppercase.asm)) + projects assignment,
 2. Risc-V test (in class, hands-on programming, 2nd hour) + Risc-V theory continued (1st hour),
 3. Lecture test 1 (in class, theory),
-4. Intel-x86 introduction (1st hour) + [**Risc-V project**](RiscVTopics.md) submission (2nd hour, deadline!),
+4. Intel-x86 introduction (1st hour) + [**Risc-V**](RiscVTopics.md) project submission (2nd hour, deadline!),
 5. Intel-x86 test (in class, hands-on programming),
-6. [**Intel-x86 project**](IntelTopics.md) submission (deadline!),
+6. [**Intel-x86**](IntelTopics.md) project submission (deadline!),
 7. Lecture test 2 (in class, theory).
 
 Projects can/shall be consulted during each class.
