@@ -1,6 +1,5 @@
 mgr inż. Sławomir Niespodziany, p. 414, slawomir.niespodziany@pw.edu.pl
 
-Link to here:<br>
 ![...](img/teaching.png "Teaching")
 
 ## ARKO - Architektura Komputerów
