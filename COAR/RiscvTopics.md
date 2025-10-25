@@ -2,7 +2,7 @@
 1. Histogram stretching + histogram equalization. Two resulting images in separate files. Histograms comparison.
 2. Image size extension using bilinear interpolation. 
 3. Binary image mirror reflection (input image in BMP format with 1 bit/pixel, performance optimization).
-4. Image filtering with Robert's filter ([Robert's cross](https://en.wikipedia.org/wiki/Roberts_cross)).
+4. Image filtering with Robert's filter ([Roberts cross](https://en.wikipedia.org/wiki/Roberts_cross)).
 5. Image filtering with Prewitt's filter. 
 6. Image filtering with median filter (mask of size 5x5, performance optimization).
 7. Threshold with Otsu method. RGB image converted to grayscale.
