@@ -10,6 +10,7 @@ mgr inż. Sławomir Niespodziany, p. 414, slawomir.niespodziany@pw.edu.pl
 
 ## COAR - Computer Architecture
 - [General](COAR/General.md)
+- [Memory access alignment](COAR/MemoryAccessAlignment.md)
 - [Risc-V instruction formats](../../raw/main/resources/unpriv-isa-asciidoc.pdf#page=42&zoom=200,0,350)
 - [Risc-V topics](COAR/RiscvTopics.md)
 - [Intel-x86 topics](COAR/IntelTopics.md)
