@@ -1,10 +1,12 @@
-## Memory access alignment
+# Memory access alignment
+## Rule
 Memory in a computer system must be accessed according to alignment rule. This results from several [reasons](https://stackoverflow.com/questions/381244/purpose-of-memory-alignment). The rule states that:
 
 ```
 An operand in memory must be accessed at an address divisible by its size.
 ```
 
+## Explanation
 This applies to accessing memory with *load* and *store* instructions. In Risc-V architecture there are several such instructions. They differ in their operand size. Because of the rule, these instructions always expect an address, whose nummeric value meets the follwowing criteria:
 Load | Store | Transfer size | Address criteria (in *a7*)
 -|-|-|-
@@ -24,7 +26,8 @@ Fulfilling this requirement is the developers responsibility. Failure to adhere 
 
 To ensure proper alignment, buffers shall always be allocated at a correct boundary. This can be achieved by *alignas()* specifier in C++, or *.align* (or equivalent) macro in assembly language, etc.
 
-### High level language implications
+## High level language implications
+### Incorrect example
 Let's consider the following C code example. The code owns a buffer and intends to interpret its content as both *char* and *int* types:
 
 ```
@@ -46,8 +49,13 @@ void f(void) {
 }
 ```
 
-The problem is not obvious. From the language perspective (syntax, semantics) it is perfectly correct. The problem occurs in the line where an integer is assigned to the buffer - *\*(pInt + 1)* = ... - but this is not where it originates from. Depending on the compiler's decision the buffer may be allocated at an addres which is aligned at 4B boudary or not. The compiler is free to optimize, because the buffer was declared as an array of chars (which does not need any specific alignment). This is an extremely tricky problem. It will materialise on a per-build basis (one build may work, another may not). If the buffer was dynamically allocated, the problem would be even more difficult to track - alignment would depend on the allocator's dynamic choice - on a per-run basis.
+The problem is not obvious. From the language perspective (syntax, semantics) it is perfectly correct. 
 
+The problem occurs in the line where an integer is assigned to the buffer - *\*(pInt + 1)* = ... - but this is not where it originates from. Depending on the compiler's decision the buffer may be allocated at an addres which is aligned at 4B boudary or not. The compiler is free to optimize, because the buffer was declared as an array of chars (which does not need any specific alignment). 
+
+This is an extremely tricky problem. It will materialise on a per-build basis (one build may work, another may not). If the buffer was dynamically allocated, the problem would be even more difficult to track - alignment would depend on the allocator's dynamic choice - on a per-run basis.
+
+### The fix
 A fix to this problem is trivial. Simply declare the buffer as the most restrictive type:
 
 ```
