@@ -38,10 +38,10 @@ Assignments for the tests will be to process c-string texts entered by the user 
 
 #### Additional information:
 - Assignments for both tests shall be implemented using the same environments as the ones used in the introductory class (RARS simulator for Risc-V, Makefile for Intel-x86),
-- Materials, such as documentation, notes, previously written code etc. can be used during the tests,
-- Any cooperation with other people (and AI-based tools) is forbidden during the tests,
+- Materials, such as documentation, notes, previously written code etc. can be used during the tests,,
 - Half the points are assigned for implementing a correct solution, the other half for it's quality,
 - Solutions which do not work are not evaluated,
+- Test shall be solved personally and individually,
 - To receive a grade it may be necessary to advocate & defend the implemented solution.
 
 #### Risc-V:

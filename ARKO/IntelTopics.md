@@ -1,4 +1,5 @@
-## Tematy projektów Intel x86:
+## Tematy projektów Intel x86
+Obowiązuje ten sam numer tematu co dla projektu Risc-V.
 
 1. Z-buffer - rysowanie przecinających się trójkątów, trzy trójkąty, translacja wierzchołków w 3D.
 2. Skalowanie obrazu metodą interpolacji dwuliniowej. 
@@ -22,6 +23,35 @@ maska = | -1  5 -1 | + |  2 -4  2 | * w, gdzie w = min(1, r / (min(width, height
 15. Krzywe Lissajous. 
 16. Rzutowanie perspektywiczne szkieletu czworościanu - krawędzie o różnych kolorach + obrót w mininimum dwóch płaszczyznach. 
 
+## Wymagania do projektów Intel x86
+- Projekt powinien być programem hybrydowym - część napisana w języku C/C++, a część w asemblerze,
+- Kod C/C++ jest niezbędny do uzyskania pozytywnej oceny i musi działać, ale jego jakość nie jest oceniana,
 
+### Część C/C++:
+- Program powinien być interaktywny - w trakcie działania programu użytkownik powinien mieć możliwość zmiany parametrów działania algorytmu (bez wyłączania programu, np. użycie myszki - do przybliżenia/oddalania - lub klawiszy na klawiaturze) i obserwacji wyniku działania,
+- Program powinien korzystać z dowolnej biblioteki graficznej (Allegro, OpenGL etc.) do obsługi interakcji z użytkownikiem (klawiatura/mysz), wczytywania (jeżeli konieczne) i wyświetlania grafiki, zapisywanie wyniku w pliku nie jest konieczne,
+- Projekt NIE musi operować na plikach BMP, rekomendowane jest użycie typów do obsługi grafiki zapewnianych przez wybraną bibliotekę graficzną,
+- Alokacja zasobów powinna odbyć się na poziomie C/C++ - do funkcji asemblerowej powinny być przekazywane dane wejściowe oraz już zaalokowane bufory na dane wyjściowe,
+- Przykładowy prototyp funkcji asemblerowej:
 
+void f(int width, int height, char *pInputImg, char *pOutputImg, int algoSpecificParam0, float algoSpecificParam1, ...);
 
+- Przykładowa implementacja części wysokopoziomowej w pseudokodzie:
+````{verbatim}
+allocateBuffers();
+readDataFromFiles(); // if required
+setParamsToDefaultValues();
+while(true) {
+	f(...); // call assembly function
+	displayResult();
+	readUserInput(); // this function shall block and wait for user interaction
+	modifyParams(); // according to user input
+}
+````
+
+Część asemblerowa:
+- Część asemblerowa powinna być jedną funkcją,
+- Pojedyncze wywołanie funkcji asemblerowej powinno realizować kompletny wynik działania algorytmu (np. renderować cały obraz, a nie pojedyncze piksele/wiersze), 
+- Kod asemblerowy powinien używać liczb zmiennoprzecinkowych (float lub double),
+- Można (nie trzeba) korzystać z jednostek wektorowych,
+- Implementacja wersji 64b jest oceniana w skali do 8p (implementacja wersji 32b nie jest konieczna).
