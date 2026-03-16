@@ -49,7 +49,7 @@ while(true) {
 }
 ````
 
-Część asemblerowa:
+### Część asemblerowa:
 - Część asemblerowa powinna być jedną funkcją,
 - Pojedyncze wywołanie funkcji asemblerowej powinno realizować kompletny wynik działania algorytmu (np. renderować cały obraz, a nie pojedyncze piksele/wiersze), 
 - Kod asemblerowy powinien używać liczb zmiennoprzecinkowych (float lub double),
