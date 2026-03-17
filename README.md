@@ -8,12 +8,12 @@ mgr inż. Sławomir Niespodziany, p. 414, slawomir.niespodziany@pw.edu.pl
 - [Tematy projektów Risc-V](ARKO/RiscVTopics.md)
 - [Tematy projektów Intel-x86](ARKO/IntelTopics.md)
 
-## COAR - Computer Architecture
-- [General](COAR/General.md)
-- [Memory access alignment](COAR/MemoryAccessAlignment.md)
+## ECOAR - Computer Architecture
+- [General](ECOAR/General.md)
+- [Memory access alignment](ECOAR/MemoryAccessAlignment.md)
 - [Risc-V instruction formats](../../raw/main/resources/unpriv-isa-asciidoc.pdf#page=42&zoom=200,0,350)
-- [Risc-V topics](COAR/RiscVTopics.md)
-- [Intel-x86 topics](COAR/IntelTopics.md)
+- [Risc-V topics](ECOAR/RiscVTopics.md)
+- [Intel-x86 topics](ECOAR/IntelTopics.md)
 
 ## EOPSY - Operating Systems
 - [General](EOPSY/General.md)
