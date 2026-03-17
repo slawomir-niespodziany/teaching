@@ -26,7 +26,7 @@ Za przestrzeganie tej reguły odpowiedzialny jest programista. W przeciwnym wypa
 Aby zapewnic odpowiednie wyrównanie, bufory (m.in. tablice) powinny zawsze być alokowane pod odpowiednim adresem początkowym. W języku C++ można to osiągnąć używając specyfikatora *alignas()*, a w asemblerze makra *.align* (lub innego, odpowiedniego dla danego asemblera).
 
 ## Implikacja dla języków wysokiego poziomu
-### Przykład **niepoprawny**...
+### Przykład niepoprawny...
 Rozważmy nastepujący przykład w języku C/C++. Poniższy kod ma dostęp do bufora o wielkości 8B i jego zawartość interpretuje jako pojedyncze bajty typu **char** lub całe słowa typu **int**:
 
 ```
@@ -52,7 +52,7 @@ Sytuacja nie jest oczywista. Z punktu widzenia języka (składnia, semantyka) ko
 
 Problem objawi się w trakcie wynonania linii, w której następuje przypisanie wartości typu int - **\*(pInt + 1)** = ... - ale nie jest to linia, która faktycznie go stanowi. W zależności od decyzji kompilatora, bufor może zostać zaalokowany pod adresem wyrównanym do 4B, lub nie. Dla bufora zdefiniowanego jako zmienna globalna, nastąpi to w momencie kompilacji. Gdyby był to bufor dynamicznie alokowany, decyzja zapadałaby w trakcie działania. Kompilator i środowisko będą optymalizować działanie, gdyż bufor jest tablicą zmiennych typu _char_ (który nie wymaga żadnego konkretnego wyrównania). Program może się zachowywać różnie (działać/nie działać) - per kompilacja, lub per uruchomienie. 
 
-### ...poprawka
+### ...poprawny
 Rozwiązanie tego problemu jest trywialne. Bufor należy zaimplementować dla typu "najbardziej restrykcyjnego":
 
 ```
@@ -61,4 +61,4 @@ int buffer[2]; // also size of 8B
 ...
 ```
 
-Now it can be accessed as both desired types. It occupies the same amount of memory, but its alignment is deterministic (nor the compiler, not the allocator can place it at an unaligned address now).
+Teraz bufor może być traktowany jako bufor bajtów typu _char_ oraz słów typu _int_. Zajmuje tyle samo pamięci, ale ze względu na swój typ, zawsze zostanie zaalokowany pod adresem wyrównanym do 4B.
