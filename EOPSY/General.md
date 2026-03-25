@@ -27,12 +27,15 @@ Part of the assignment is also to:
 - prepare (at least) two non-trivial use-cases to demonstrate the correctness of the implemented method,
 - be ready to answer questions about the solution (concept and implementation), without looking into the code.
 
+#### Archiving & sending the work
 When done, you shall sent all the modified/created files (**only** those) via email (otherwise, the grade will be **0p**, the deadline for sending is 7 days from assignment deadline). The files shall be packed in an archive named:
 _syscall\_\<student_id\>\_\<surname\>\_\<name\>.tar_
 it shall also reflect **where** the files were located in the Phoenix source directory. 
 Use the following command to archive everything (in Ubuntu, in the source root directory _phoenix-rtos-project_, adjust the file list for your case):
  > cd phoenix-rtos-project\
  > tar -zcvf syscall_0123_niespodziany_slawomir.tar phoenix-rtos-kernel/syscalls.h _user/hello/Makefile _user/hello/main.c
+
+Other archives/other formats will not be accepted (including the archives which have *everything* archived in them). 
 
  ### Scheduler
  Implement a scheduling algorithm, which handles two process classes - **interactive** and **batch**. A process shall be treated as an _interactive_ process by default. A syscall shall be implemented to allow for changing the process class to _batch_ and back to _interactive_. The algorithm shall handle processes as follows:
