@@ -50,3 +50,14 @@ Part of the assignment is also to:
  - be ready to answer questions about the solution (concept and implementation), without looking into the code.
 
 The assignment files shall be archived & sent the same way as for the assignment #1.
+
+## Synchronization w/semaphores
+Implement a FIFO queue which holds up to 16 elements. Each element is of a specified type (A/B/C) and has a value assigned (8-bit unsigned). The queue shall synchronize passing the elements between producer- and consumer- processes:
+ - There are three producer processes (one for each element type). Each producer creates between 64-128 elements of the corresponding type. No delays.
+ - There are two consumer processes:
+  - The first consumer consumes elements of type A or B (single elements, one by one). It is only allowed to consume these elements if the queue does NOT consist of element C. 
+  - The second consumer consumes elements of all three types (at once) - if the queue consists of element C. If the queue consists of ONLY elements C then the consumer is allowed to consume elements C alone (one by one). 
+ - The solution shall be implemented in C or C++, using processes, shared memory and semaphores in Linux (not necessarily Phoenix).
+ - Proper demonstration shall be prepared.
+
+The assignment files shall be archived & sent the same way as for the assignment #1.
