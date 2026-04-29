@@ -61,3 +61,17 @@ Implement a FIFO queue which holds up to 16 elements. Each element is of a speci
  - Proper demonstration shall be prepared.
 
 The assignment files shall be archived & sent the same way as for the assignment #1.
+
+
+## Formal verification
+Verify the algorithm implemented in the previous assignment.
+
+## Filesystem
+Implement a filesystem, which will store its data in a single file in Linux, which will allow the following basic operations:
+ - upload selected file from linux into your filesystem,
+ - list files stored in your filesystem,
+ - delete selected file from your filesystem,
+ - download selected file from your filesystem back into linux.
+
+No particular implementation or design is required.
+The assignment files shall be archived & sent the same way as for the assignment #1.
