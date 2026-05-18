@@ -75,3 +75,9 @@ Implement a filesystem, which will store its data in a single file in Linux, whi
 
 No particular implementation or design is required.
 The assignment files shall be archived & sent the same way as for the assignment #1.
+
+## Server
+Implement a server which accepts binary data (e.g. a file from the filesystem) and calculates CRC8 for this data. The server shall allow for calculating crc for multiple files. Assumption: After the file is loaded the user will always read the corresponding checksum value. 
+
+No particular implementation or design is required.
+The assignment files shall be archived & sent the same way as for the assignment #1.
