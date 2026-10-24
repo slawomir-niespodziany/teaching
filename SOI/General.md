@@ -3,6 +3,7 @@
 ## Regulamin laboratoriów
 - Poniższe punkty są dodatkowymi w stosunku do ogólnych zasad obowiązujących na przedmiocie,
 - Zadania są realizowane na sprzęcie i w środowisku wybranym przez studenta,
+- Wymagane jest stosowanie dobrych praktyk programistycznych (m.in. formatowanie kodu) - laboratorium nie dotyczy programowania w języku C, 
 - Realizowane zadania nie musza być wysyłane (chyba, że na indywidualne polecenie prowadzącego),
 - Implementacje, które nie działają, nie są oceniane,
 - Zadania nie są oceniane po terminie - terminem jest ostatnie laboratorium dla danego zadania (można oddawać wcześniej),
