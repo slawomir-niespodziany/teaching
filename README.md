@@ -9,6 +9,9 @@ mgr inż. Sławomir Niespodziany, p. 414, slawomir.niespodziany@pw.edu.pl
 - [Tematy projektów Risc-V](ARKO/RiscVTopics.md)
 - [Tematy projektów Intel-x86](ARKO/IntelTopics.md)
 
+## SOI - Systemy Operacyjne
+- [Informacje organizacyjne](SOI/General.md)
+
 ## ECOAR - Computer Architecture
 - [General](ECOAR/General.md)
 - [Risc-V instruction formats](../../raw/main/resources/unpriv-isa-asciidoc.pdf#page=42&zoom=200,0,350)
