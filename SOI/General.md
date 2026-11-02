@@ -21,6 +21,6 @@ Częściami zadania są m.in.:
 - Przygotowanie co najmniej dwóch nietrywialnych przypadków użycia, dla zademonstrowania poprawności działania wywołania.
 
 ### Szeregowanie procesów
-Zmodyfikuj algorytm szeregowania w systemie minix, w taki sposób aby obsługiwał trzy klasy procesów - obliczeniowe (wsadowe), interaktywne oraz realizujące operacje masywnego wejścia/wyjścia. Dla każdej klasy procesu zdefiniuj odpowiednie wymagania, a następnie je zaimplementuj. Zaplanuj adekwatny sposób symulacji procesu kazdej z kategorii. Zaimplementuj możliwość ustawienia (zmiany domyślmnej) klasy procesu. Zaplanuj, przygotuj i wykonaj testy.
+Zmodyfikuj algorytm szeregowania w systemie minix, w taki sposób aby obsługiwał trzy klasy procesów - obliczeniowe (wsadowe), interaktywne oraz realizujące operacje masywnego wejścia/wyjścia. Dla każdej klasy procesu zdefiniuj odpowiednie wymagania, a następnie je zaimplementuj. Zaplanuj adekwatny sposób symulacji procesu kazdej klasy. Zaimplementuj możliwość ustawienia (zmiany domyślmnej) klasy procesu. Zaplanuj, przygotuj i wykonaj testy. Uwzględnij przypadki złośliwe.
 
 Warto pamiętać, że zarówno operacja _sleep()_ jak i _printf()_ powoduje przeniesienie procesu do kolejki procesów zablokowanych (a następnie jego powrót do kolejki gotowych). E.g. _printf()_ analogicznie jak _scanf()_ obsługuje interakcję z terminalem - a więc dopóki ta interakcja nie jest zakończona, proces nie może kontynuować. Dla _scanf()_ jest to oczywiste. Dla _printf()_ działa analogicznie, jedynie "szybciej", czyli też z chwilowym zablokowaniem.
