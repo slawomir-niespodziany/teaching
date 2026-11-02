@@ -21,15 +21,15 @@ Lecture tests 1 & 2 are carried out during laboratory classes, but are graded as
 
 Projects can/shall be consulted during each class.
 
-n | Excercise                    | Group 103         | Group 104
+n | Excercise                    | Group 105         | Group 106
 -|-|-|-
-1 | Risc-V introduction          | 28.10 14:15 (2h)  | 21.10 14:15 (2h)
-2 | Risc-V test                  | 18.11 14:15 (2h)  | 4.11 14:15 (2h)
-3 | Lecture test 1               | 25.11 15:15 (1h)  | 25.11 14:15 (1h)
-4 | Intel-x86 introduction       | 9.12 14:15 (2h)   | 2.12 14:15 (2h)
-5 | Intel-x86 test               | 23.12 14:15 (2h)  | 16.12 14:15 (2h)
-6 | Intel-x86 project submission | 20.01 14:15 (2h)  | 13.01 14:15 (2h)
-7 | Lecture test 2               | 27.01 15:15 (1h)  | 27.01 14:15 (1h)
+1 | Risc-V introduction          | 27.10 10:15 (2h)  | 3.11 10:15 (2h)
+2 | Risc-V test                  | 10.11 10:15 (2h)  | 17.11 10:15 (2h)
+3 | Lecture test 1               | 24.11 11:15 (1h)  | 24.11 10:15 (1h)
+4 | Intel-x86 introduction       | 8.12 10:15 (2h)   | 1.12 10:15 (2h)
+5 | Intel-x86 test               | 22.12 10:15 (2h)  | 15.12 10:15 (2h)
+6 | Intel-x86 project submission | 19.01 10:15 (2h)  | 12.01 10:15 (2h)
+7 | Lecture test 2               | 26.01 11:15 (1h)  | 26.01 10:15 (1h)
 
 ## Risc-V, Intel x86 tests (in class, hands-on programming)
 Assignments for the tests will be to process c-string texts entered by the user (analogous to the examples shown during introduction of each architecture). The difficulty may be slightly higher - there may be a need to implement a nested loop (a loop within a loop - one nesting level, no deeper). Exemplary assignments include:
@@ -41,8 +41,9 @@ Assignments for the tests will be to process c-string texts entered by the user 
 - Materials, such as documentation, notes, previously written code etc. can be used during the tests,,
 - Half the points are assigned for implementing a correct solution, the other half for it's quality,
 - Solutions which do not work are not evaluated,
-- Test shall be solved personally and individually,
-- To receive a grade it may be necessary to advocate & defend the implemented solution.
+- To receive a grade it is required to advocate for & defend the implemented solution,
+- The projects and in-class tests shall be done personally and individually,
+- Any attempt to submit work of anyone else (including AI) will result in zeroing the score of all the laboratories.
 
 #### Risc-V:
   - New line character ('\n') shall be treated as a valid part of the c-string (simply, as one of the characters).

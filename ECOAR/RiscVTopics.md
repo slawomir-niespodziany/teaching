@@ -16,7 +16,7 @@
 15. Calculating sine & cosine values using CORDIC algorithm (no images involved). 
 16. Orthogonal projection of two triangles (z-buffer, coordinates read from console). 
 
-[Assignment table](https://wutwaw-my.sharepoint.com/:x:/g/personal/slawomir_niespodziany_pw_edu_pl/ERwLc89tU91BrhZMLEFLZn4B0fcK_YF8B_xaa77L4twK6A?e=HZKwos)
+[Assignment table](https://wutwaw-my.sharepoint.com/:x:/g/personal/slawomir_niespodziany_pw_edu_pl/IQAcC3PPbVPdQa4WTCxBS2Z-AdH3Cv2BfAf8Wmu-y-LcCug?e=TOg2rD)
 
 ## Risc-V project requirements
 Requirements for implementing Risc-V projects (failure to comply will result in a lower grade):
